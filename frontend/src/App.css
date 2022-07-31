@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    background-color: rgb(242, 249, 180);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn{
+    border: 1px solid black;
+}
+
+.btn:hover{
+    background-color: rgb(114, 158, 27);
+
+}
+.alert{
+    background-color:rgb(194, 247, 188) ;
+}
+.form-control{
+    border: 1px solid black;
+}
