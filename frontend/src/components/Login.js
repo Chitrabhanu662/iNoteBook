@@ -4,10 +4,11 @@ import {useNavigate} from 'react-router-dom'
 const Login = (props) => {
      const [credentials, setcredentials] = useState({email:"",password:""})
      const navigate = useNavigate();
+     const PORT = process.env.PORT || 5000;
 
     const handleSubmit= async (e)=>{
         e.preventDefault();
-        const response = await fetch("http://localhost:5000/api/auth/login", {
+        const response = await fetch(`http://localhost:${PORT}/api/auth/login`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
